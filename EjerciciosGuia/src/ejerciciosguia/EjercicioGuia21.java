@@ -53,14 +53,14 @@ public class EjercicioGuia21 {
         int contador, auxUno, auxDos;
         contador = auxUno = auxDos = 0;
         boolean retorno = true;
-        for (int i = 0; i < 8; i++) {
-            for (int j = 0; j < 8; j++) {
+        for (int i = 0; i < 8; i++) {        //Se encarga de las filas de la matriz externa
+            for (int j = 0; j < 8; j++) {   //Reorre las columnas de fila externa
                 contador = 0;
                 auxUno = 0;
-                for (int k = i; k < i + 3; k++) {
+                for (int k = i; k < i + 3; k++) {   //Recorre la fila de matriz interna
                     auxDos = 0;
-                    for (int l = j; l < j + 3; l++) {
-                        if (x[k][l] == y[auxUno][auxDos]) {
+                    for (int l = j; l < j + 3; l++) { //Recorre la columna de la matriz interna  
+                        if (x[k][l] == y[auxUno][auxDos]) {  //Utilizo auxiliares uno y dos para poder comparar con la matriz mas chica
                             contador++;
                         }
                         auxDos++;
